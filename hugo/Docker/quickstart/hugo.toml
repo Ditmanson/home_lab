@@ -1,0 +1,15 @@
+[[params.menu]]
+  name = "blog"
+  url = "posts/"
+
+[[params.menu]]
+  name = "tags"
+  url = "tags/"
+
+[[params.menu]]
+  name = "about"
+  url = "about/"
+
+[[params.menu]]
+  name = "stories"
+  url = "stories/"

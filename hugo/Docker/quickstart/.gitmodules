@@ -1,0 +1,7 @@
+[submodule "themes/terminal"]
+	path = themes/terminal
+	url = https://github.com/panr/hugo-theme-terminal.git
+[submodule "themes/paperesque"]
+	path = themes/paperesque
+	url = https://github.com/capnfabs/paperesque
+	branch = mainline

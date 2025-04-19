@@ -1,4 +1,6 @@
 title = "Tdebian"
+theme = "paperesque"
+
 [[params.menu]]
   name = "posts"
   url = "posts/"

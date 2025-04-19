@@ -11,4 +11,12 @@ spec:
     image: nginx:latest
     ports:
     - containerPort: 80
+    volumeMounts:
+    - name: hugo-public
+      mountPath: /usr/share/nginx/html
+  volumes:
+  - name: hugo-public
+    hostPath:
+      path: /Users/travisditmanson/home_lab/hugo/docker/blog/public
+      type: Directory
 

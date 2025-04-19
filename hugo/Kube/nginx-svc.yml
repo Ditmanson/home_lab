@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-svc
+  namespace: hugo
+  labels:
+    app: nginx-hugo
+spec:
+  type: LoadBalancer
+  selector:
+    app: nginx-hugo
+  ports:
+    - port: 80
+      targetPort: 80

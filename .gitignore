@@ -1,0 +1,16 @@
+# mac generated files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+
+# windows generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# images
+**/static.png

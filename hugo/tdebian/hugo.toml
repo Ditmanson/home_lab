@@ -2,28 +2,28 @@ title = "Tdebian"
 theme = "paperesque"
 
 [[params.menu]]
-  name = "posts"
-  url = "posts/"
+  name = "evere5t"
+  url = "evere5t/"
 
 [[params.menu]]
   name = "tags"
   url = "tags/"
 
 [[params.menu]]
-  name = "about"
-  url = "about/"
+  name = "denal!"
+  url = "denal!/"
 
 [[params.menu]]
-  name = "stories"
-  url = "stories/"
+  name = "t1mber"
+  url = "t1mber/"
 [[params.topmenu]]
-  name = "about"
-  url = "about/"
+  name = "t1mber"
+  url = "t1mber/"
 
 [[params.topmenu]]
-  name = "contact"
-  url = "contact/"
+  name = "denal!"
+  url = "denal!/"
 
 [[params.topmenu]]
-  name = "rss"
-  url = "posts/index.xml"
+  name = "evere5t"
+  url = "evere5t/"

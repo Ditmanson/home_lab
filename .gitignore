@@ -1,3 +1,4 @@
+
 # mac generated files
 .DS_Store
 .AppleDouble
@@ -15,3 +16,4 @@ $RECYCLE.BIN/
 # images
 **/static/*
 **/static
+**.jpg

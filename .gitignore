@@ -13,5 +13,5 @@ Desktop.ini
 $RECYCLE.BIN/
 
 # images
-**/images/*
-**/images
+**/static/*
+**/static

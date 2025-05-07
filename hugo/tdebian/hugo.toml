@@ -16,6 +16,11 @@ theme = "paperesque"
 [[params.menu]]
   name = "t1mber"
   url = "t1mber/"
+
+[[params.menu]]
+  name = "tech"
+  url = "tech/"
+
 [[params.topmenu]]
   name = "t1mber"
   url = "t1mber/"

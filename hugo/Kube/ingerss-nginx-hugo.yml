@@ -8,13 +8,13 @@ metadata:
 spec:
   ingressClassName: traefik  # Make sure this is set
   rules:
-  - http:
+    - http:
       paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: nginx-svc
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: nginx-svc
             port:
               number: 80
 

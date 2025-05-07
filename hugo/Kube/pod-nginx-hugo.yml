@@ -11,12 +11,11 @@ spec:
     image: nginx:latest
     ports:
     - containerPort: 80
+    - containerPort: 443
     volumeMounts:
-    - name: hugo-public
+    - name: nas-volume
       mountPath: /usr/share/nginx/html
   volumes:
-  - name: hugo-public
-    hostPath:
-      path: /Users/travisditmanson/home_lab/hugo/docker/blog/public
-      type: Directory
-
+    - name: nas-volume
+      persistentVolumeClaim:
+        claimName: nas-pvc

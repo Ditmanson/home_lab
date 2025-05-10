@@ -1,9 +1,11 @@
-#!/bin/zsh
+#!/bin/bash
 set -euo pipefail
 
 # Require keys to be set
 : "${API_KEY:?Missing API_KEY}"
 : "${SECRET_KEY:?Missing SECRET_KEY}"
+
+bash get_records.sh > records.md
 
 DOMAIN="tdebian.com"  # change this if needed
 RECORDS_FILE="./records.md"

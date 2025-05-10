@@ -17,3 +17,5 @@ $RECYCLE.BIN/
 **/static/*
 **/static
 **.jpg
+# public
+**/public/*

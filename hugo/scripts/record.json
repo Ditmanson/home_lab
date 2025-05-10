@@ -1,0 +1,7 @@
+{
+  "apikey": "YOUR_API_KEY",
+  "secretapikey": "YOUR_SECRET_KEY",
+  "domain": "tdebian.com",
+  "type": "A",
+  "name": "@"
+}

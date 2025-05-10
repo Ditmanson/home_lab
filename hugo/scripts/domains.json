@@ -1,0 +1,7 @@
+{
+  "apikey": "${API_KEY}",
+  "secretapikey": "${SECRET_KEY}",
+  "start": "1",
+  "includeLabels": "yes"
+}
+

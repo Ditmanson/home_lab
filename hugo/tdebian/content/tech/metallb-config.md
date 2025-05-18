@@ -3,6 +3,9 @@ title: "Load balancer"
 date: 2025-04-12T22:00:00Z
 draft: false
 ---
+
+I wanted to run all my apps off kubernetes instead of the more popular homelab option of docker_compose. The intention is to get better at work; however, most loadbalancers don't work on bare metal. After eventually discovering this I installed metallb and removed the stock loadbalancer form k3s. 
+
 ```yaml
 ---
 apiVersion: metallb.io/v1beta1

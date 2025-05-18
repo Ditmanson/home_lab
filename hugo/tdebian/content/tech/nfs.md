@@ -3,6 +3,8 @@ title: "nfs server stuf"
 date: 2025-04-12T22:00:00Z
 draft: false
 ---
+Using the csi-driver-nfs from a helm install, creating a storage class, and then a pvc on my nas. The nas and the debian server are plugged into the same switch with cat5e cable so it works out pretty well.
+
 ```yaml
 #values.yml
 customLabels: {}

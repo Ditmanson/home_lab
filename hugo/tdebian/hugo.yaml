@@ -1,0 +1,26 @@
+title: "Tdebian"
+theme: "paperesque"
+
+params:
+  menu:
+    - name: "tags"
+      url: "tags/"
+    - name: "tblog"
+      url: "tblog/"
+    - name: "jblog"
+      url: "jblog/"
+    - name: "tjstories"
+      url: "tjstories/"
+    - name: "tech"
+      url: "tech/"
+  topmenu:
+    - name: "tags"
+      url: "tags/"
+    - name: "tblog"
+      url: "tblog/"
+    - name: "jblog"
+      url: "jblog/"
+    - name: "tjstories"
+      url: "tjstories/"
+    - name: "tech"
+      url: "tech/"

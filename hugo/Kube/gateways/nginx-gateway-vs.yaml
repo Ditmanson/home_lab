@@ -1,0 +1,60 @@
+apiVersion: networking.istio.io/v1
+kind: Gateway
+metadata:
+  name: nginx-gateway
+  namespace: hugo
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+    - port:
+        number: 80
+        name: http
+        protocol: HTTP
+      hosts:
+        - "*"
+---
+apiVersion: networking.istio.io/v1
+kind: VirtualService
+metadata:
+  name: nginx-hugo
+  namespace: hugo
+spec:
+  hosts:
+    - "*"
+  gateways:
+    - nginx-gateway
+  http:
+    - match:
+        - uri:
+            prefix: "/"
+          headers:
+            Host:
+              exact: 192.168.1.246
+        - uri:
+            prefix: "/"
+          headers:
+            Host:
+              exact: "tdebian.com"
+        - uri:
+            prefix: "/"
+          headers:
+            Host:
+              exact: "localhost"
+      route:
+        - destination:
+            host: nginx-svc-hugo.hugo.svc.cluster.local
+            port:
+              number: 80
+    - match:
+        - uri:
+            prefix: "/"
+          headers:
+            Host:
+              exact: "tech.tdebian.com"
+      route:
+        - destination:
+            host: nginx-svc-tech.hugo.svc.cluster.local
+            port:
+              number: 80
+

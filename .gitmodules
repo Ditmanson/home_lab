@@ -1,3 +1,6 @@
 [submodule "hugo/tech/themes/re-terminal"]
 	path = hugo/tech/themes/re-terminal
 	url = https://github.com/mirus-ua/hugo-theme-re-terminal.git
+[submodule "hugo/travis/themes/binario"]
+	path = hugo/travis/themes/binario
+	url = https://github.com/vimux/binario

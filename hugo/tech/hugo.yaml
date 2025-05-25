@@ -21,8 +21,8 @@ params:
 languages:
   en:
     languageName: English
-    title: Your site title
-    subtitle: Your site subtitle
+    title: Tdebian
+    subtitle: tech
     keywords: ''
     menuMore: Show more
     readMore: Read more
@@ -30,7 +30,7 @@ languages:
 
     params:
       logo:
-        logoText: Terminal
+        logoText: Tdebian
         logoHomeLink: /
 
     menu:

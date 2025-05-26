@@ -23,14 +23,8 @@ spec:
   hosts:
   - "*"
   gateways:
-  - nginx-gateway
-  http:
-  - match:
-    - uri:
-        prefix: "/"
     route:
     - destination:
         host: nginx-svc-hugo.hugo.svc.cluster.local
         port:
           number: 80
-

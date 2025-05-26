@@ -1,0 +1,39 @@
+apiVersion: networking.istio.io/v1
+kind: Gateway
+metadata:
+  name: nginx-gateway
+  namespace: hugo
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+    - port:
+        number: 443
+        name: https-tblog
+        protocol: HTTPS
+      tls:
+        mode: SIMPLE
+        credentialName: tblog-credential
+      hosts:
+        - "tblog.tdebian.com"
+    - port:
+        number: 443
+        name: https-tech
+        protocol: HTTPS
+      tls:
+        mode: SIMPLE
+        credentialName: tech-credential
+      hosts:
+        - "tech.tdebian.com"
+    - port:
+        number: 80
+        name: http-tblog
+        protocol: HTTP
+      hosts:
+        - "tblog.tdebian.com"
+    - port:
+        number: 80
+        name: http-tech
+        protocol: HTTP
+      hosts:
+        - "tech.tdebian.com"

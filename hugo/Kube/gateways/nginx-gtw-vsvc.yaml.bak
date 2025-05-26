@@ -29,23 +29,16 @@ spec:
         - uri:
             prefix: "/"
           headers:
-            Host:
-              exact: 192.168.1.246
+            host:
+              exact: "192.168.1.246"
         - uri:
             prefix: "/"
           headers:
-            Host:
-              exact: "tdebian.com"
-        - uri:
-            prefix: "/"
-          headers:
-            Host:
-              exact: "localhost"
+            host:
+              exact: "tblog.tdebian.com"
       route:
         - destination:
             host: nginx-svc-hugo.hugo.svc.cluster.local
-            port:
-              number: 80
     - match:
         - uri:
             prefix: "/"
@@ -55,6 +48,4 @@ spec:
       route:
         - destination:
             host: nginx-svc-tech.hugo.svc.cluster.local
-            port:
-              number: 80
 

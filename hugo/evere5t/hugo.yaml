@@ -1,0 +1,9 @@
+baseURL: 'https://evere5t.tdebian.com/'
+languageCode: 'en-us'
+title: 'Evere5t921'
+theme: "binario"
+pagination:
+  pagerSize: 10
+Params:
+  description: "Responsive card-based & code-light Hugo theme"
+  columns: 2

@@ -9,6 +9,10 @@ spec:
   gateways:
     - nginx-gateway
   http:
-    - route:
+    - match:
+        - headers:
+            host:
+              exact: "tblog.tdebian.com"
+      route:
         - destination:
             host: nginx-svc-hugo.hugo.svc.cluster.local

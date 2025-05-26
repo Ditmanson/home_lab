@@ -5,22 +5,22 @@ metadata:
   name: nginx-svc-tech
   namespace: hugo
   labels:
-    app: nginx-hugo
+    app: nginx-tech
     service: s1
 spec:
   ports:
   - port: 80
     name: http
   selector:
-    app: nginx-hugo
+    app: nginx-tech
 ---
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  name: nginx-hugo-serviceaccount
+  name: nginx-tech-serviceaccount
   namespace: hugo
   labels:
-    account: nginx-hugo
+    account: nginx-tech
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -28,18 +28,18 @@ metadata:
   name: nginx-tech
   namespace: hugo
   labels:
-    app: nginx-hugo
+    app: nginx-tech
     version: v1
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx-hugo
+      app: nginx-tech
       version: v1
   template:
     metadata:
       labels:
-        app: nginx-hugo
+        app: nginx-tech
         version: v1
     spec:
       containers:

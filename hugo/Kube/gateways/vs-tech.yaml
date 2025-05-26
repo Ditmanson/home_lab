@@ -10,14 +10,7 @@ spec:
     - nginx-gateway
   http:
     - match:
-        - uri:
-            prefix: "/"
-          headers:
-            host:
-              exact: "192.168.1.246"
-        - uri:
-            prefix: "/"
-          headers:
+        - headers:
             host:
               exact: "tech.tdebian.com"
       route:

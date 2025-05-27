@@ -1,0 +1,14 @@
+title: "Fun wacts"
+languageCode: "en-us"
+theme: "hello-4s3ti"
+
+taxonomies:
+  tag: "tags"
+  category: "blog"
+
+menu:
+  main:
+    - identifier: "facts"
+      name: "Facts"
+      url: "/facts"
+      weight: 1

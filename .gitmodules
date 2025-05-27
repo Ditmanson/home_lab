@@ -4,3 +4,6 @@
 [submodule "hugo/evere5t/themes/binario"]
 	path = hugo/evere5t/themes/binario
 	url = https://github.com/vimux/binario
+[submodule "hugo/funfact/themes/hello-4s3ti"]
+	path = hugo/funfact/themes/hello-4s3ti
+	url = https://github.com/4s3ti/hugo-theme-hello-4s3ti.git
